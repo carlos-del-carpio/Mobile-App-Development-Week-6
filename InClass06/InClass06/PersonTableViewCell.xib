@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="131" id="KGk-i7-Jjw" customClass="PersonTableViewCell" customModule="InClass06" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="131"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="428" height="131"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BAD-gy-Jcq" userLabel="Overall Stack">
+                        <rect key="frame" x="20" y="10" width="388" height="110"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_male" translatesAutoresizingMaskIntoConstraints="NO" id="dRV-My-gCk">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="SSi-AQ-ng0"/>
+                                    <constraint firstAttribute="width" constant="100" id="SVo-cE-nGY"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="e2C-gd-P3Q" userLabel="Detail Stack">
+                                <rect key="frame" x="110" y="0.0" width="278" height="110"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8Z-Yw-bJ9" userLabel="Name">
+                                        <rect key="frame" x="0.0" y="0.0" width="278" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJG-O0-82d" userLabel="State">
+                                        <rect key="frame" x="0.0" y="32" width="278" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uiQ-Wn-Cw5" userLabel="Age">
+                                        <rect key="frame" x="0.0" y="60.5" width="278" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Gf-CV-De5" userLabel="Relationship">
+                                        <rect key="frame" x="0.0" y="89.5" width="278" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6Gf-CV-De5" firstAttribute="top" secondItem="uiQ-Wn-Cw5" secondAttribute="bottom" constant="8" symbolic="YES" id="0tj-yp-auu"/>
+                                    <constraint firstItem="uiQ-Wn-Cw5" firstAttribute="trailing" secondItem="aJG-O0-82d" secondAttribute="trailing" id="4wr-z9-QZc"/>
+                                    <constraint firstAttribute="bottom" secondItem="6Gf-CV-De5" secondAttribute="bottom" id="699-NG-93a"/>
+                                    <constraint firstItem="6Gf-CV-De5" firstAttribute="leading" secondItem="uiQ-Wn-Cw5" secondAttribute="leading" id="9op-ke-SJN"/>
+                                    <constraint firstItem="aJG-O0-82d" firstAttribute="top" secondItem="I8Z-Yw-bJ9" secondAttribute="bottom" constant="8" symbolic="YES" id="DxA-Kp-j4C"/>
+                                    <constraint firstItem="uiQ-Wn-Cw5" firstAttribute="top" secondItem="aJG-O0-82d" secondAttribute="bottom" constant="8" symbolic="YES" id="EFR-0r-7sm"/>
+                                    <constraint firstItem="aJG-O0-82d" firstAttribute="leading" secondItem="I8Z-Yw-bJ9" secondAttribute="leading" id="GOb-zQ-hlV"/>
+                                    <constraint firstItem="aJG-O0-82d" firstAttribute="trailing" secondItem="I8Z-Yw-bJ9" secondAttribute="trailing" id="HFc-aK-EHl"/>
+                                    <constraint firstItem="6Gf-CV-De5" firstAttribute="trailing" secondItem="uiQ-Wn-Cw5" secondAttribute="trailing" id="SeN-iR-hoX"/>
+                                    <constraint firstAttribute="trailing" secondItem="I8Z-Yw-bJ9" secondAttribute="trailing" id="hU9-bX-uWi"/>
+                                    <constraint firstItem="I8Z-Yw-bJ9" firstAttribute="leading" secondItem="e2C-gd-P3Q" secondAttribute="leading" id="kMh-P9-Kd0"/>
+                                    <constraint firstItem="I8Z-Yw-bJ9" firstAttribute="top" secondItem="e2C-gd-P3Q" secondAttribute="top" id="tLN-Ek-x7U"/>
+                                    <constraint firstItem="uiQ-Wn-Cw5" firstAttribute="leading" secondItem="aJG-O0-82d" secondAttribute="leading" id="yTU-fP-RCQ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="e2C-gd-P3Q" secondAttribute="trailing" id="OhW-TV-pSu"/>
+                            <constraint firstAttribute="bottom" secondItem="e2C-gd-P3Q" secondAttribute="bottom" id="acd-ZJ-vLY"/>
+                            <constraint firstItem="e2C-gd-P3Q" firstAttribute="top" secondItem="BAD-gy-Jcq" secondAttribute="top" id="nWl-0J-Ux9"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="BAD-gy-Jcq" secondAttribute="trailing" id="4kT-pa-Aze"/>
+                    <constraint firstItem="BAD-gy-Jcq" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="Pmj-tJ-vZh"/>
+                    <constraint firstItem="BAD-gy-Jcq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="TCg-yh-Xt3"/>
+                    <constraint firstItem="BAD-gy-Jcq" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" id="ddP-L9-g09"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ageOutput" destination="uiQ-Wn-Cw5" id="bfk-V8-gGH"/>
+                <outlet property="nameOutput" destination="I8Z-Yw-bJ9" id="KMh-9f-suc"/>
+                <outlet property="relationshipOutput" destination="6Gf-CV-De5" id="akL-Kk-Nsz"/>
+                <outlet property="stateOutput" destination="aJG-O0-82d" id="j7X-dP-n53"/>
+                <outlet property="userImage" destination="dRV-My-gCk" id="Pwx-hG-xMT"/>
+            </connections>
+            <point key="canvasLocation" x="252.17391304347828" y="118.86160714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="avatar_male" width="512" height="512"/>
+    </resources>
+</document>
